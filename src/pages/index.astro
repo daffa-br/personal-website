@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Accordion from "../components/Accordion.astro";
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="My Portfolio">
+  <Navbar />
+  <Hero />
+  <div id="edu" class="my-40">
+    <h1 class="text-5xl font-bold text-center">Educations</h1>
+    <p class="py-6 text-xl text-center">Here's where I got my education.</p>
+    <Accordion />
+  </div>
+  <div id="porto" class="my-40">
+    <h1 class="text-5xl font-bold text-center">Portfolios</h1>
+    <p class="py-6 text-xl text-center">Here are my Portfolios.</p>
+    <Card
+      title="Daffa Gallery"
+      description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas sint officiis expedita reiciendis enim tempora omnis deserunt cum, quia nisi consectetur quisquam eaque fugit quibusdam optio atque aliquam vero assumenda."
+      imgSrc="daffa-gallery.png"
+      imgAlt="daffa gallery"
+      link="https://daffa-gallery-bootsrap.vercel.app/"
+    />
+    <Card
+      title="Notes App API"
+      description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas sint officiis expedita reiciendis enim tempora omnis deserunt cum, quia nisi consectetur quisquam eaque fugit quibusdam optio atque aliquam vero assumenda."
+      imgSrc="notes-api.png"
+      imgAlt="notes app api"
+      link="https://github.com/daffa-br/notes-app-back-end"
+    />
+  </div>
+  <Footer />
+</Layout>
